@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Consulta la temperatura, humedad y precipitación actuales de cualquier ciudad." />
+    <title>Clima Actual</title>
+  </head>
+  <body>
+    <main class="app">
+      <header>
+        <h1>Clima actual</h1>
+        <p class="subtitle">Escribe el nombre de una ciudad para ver su temperatura, humedad y precipitación.</p>
+      </header>
+
+      <!-- Formulario de búsqueda (CitySearchForm) -->
+      <section id="search" aria-label="Búsqueda de ciudad"></section>
+
+      <!-- Indicador de carga (LoadingIndicator) -->
+      <div id="loading-indicator" hidden>Consultando el clima…</div>
+
+      <!-- Mensajes de error (ErrorMessage) -->
+      <p id="error-message" hidden></p>
+
+      <!-- Datos del clima (WeatherDisplay) -->
+      <section id="weather-display" aria-live="polite" aria-label="Clima de la ciudad"></section>
+
+      <footer>
+        Datos: <a href="https://open-meteo.com/" target="_blank" rel="noopener noreferrer">Open-Meteo</a>
+      </footer>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
