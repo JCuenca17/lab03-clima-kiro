@@ -26,3 +26,5 @@ npm install
 npm test
 npm run dev
 ```
+
+© 2026 José Luis Cuenca Gutiérrez. Todos los derechos reservados.
